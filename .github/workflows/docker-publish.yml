@@ -5,6 +5,11 @@ name: Docker
 # separate terms of service, privacy policy, and support
 # documentation.
 
+# Usage:
+# 1. Create a Classic Personal Access Token (PAT) (for v2, with `read:packages` and
+#    `delete:packages`; for v3, with `write:packages`) scope and add it as a secret named `PAT` in
+#    the repository settings.
+
 on:
   schedule:
     - cron: '44 0 * * 0'
